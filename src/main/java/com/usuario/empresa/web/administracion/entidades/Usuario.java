@@ -1,38 +1,52 @@
-package com.usuario.empresa.web.administracion.entidades;
+
 
 public class Usuario {
-	private int id;
-	private String nombre;
-	private int edad;
 
-	// contructor
-	public Usuario() {
-		nombre = "";
-	}
+    /**
+     * atributos
+     */
+    private int id_usuario;
+    private String nombreU;
+    private String contraseña;
+    private int id_rol;
+     /**
+     * constructor
+     */
+    public Usuario() {
+    }
 
-	// getters
-	public int getId() {
-		return id;
-	}
+    /**
+     * getters
+     */
+    public int obtenerId_usuario() {
+        return id_usuario;
+    }
 
-	public String getNombre() {
-		return nombre;
-	}
+    public String obtenerNombreU() {
+        return nombreU;
+    }
 
-	public int getEdad() {
-		return edad;
-	}
+    public String obtenerPass() { 
+        return contraseña;
+    }
 
-	// setters
-	public void setId(int id) {
-		this.id = id;
-	}
+    public int obtenerid_Rol(){
+        return id_rol
+    }
 
-	public void setNombre(String nombre) {
-		this.nombre = nombre;
-	}
+    /*setters
+    */
+     public void setidUsuario(int id_usuario){
+        this.id_usuario=id_usuario;
+    }
+     public void setnombreU(String nombreU){
+        this.nombreU=nombreU;
+    }
+    public void setPass(String contraseña){
+        this.contraseña=contraseña;
+    }
+    public void setidRol(int id_rol){
+        this.id_rol=id_rol;
+    }
 
-	public void setEdad(int edad) {
-		this.edad = edad;
-	}
 }

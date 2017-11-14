@@ -51,7 +51,7 @@
 	<bean id="clienteService" class="com.usuario.empresa.web.vitivinicolaubb.servicios.ClienteService">
 		<property name="sqlMapClient" ref="sqlMap" />
 	</bean>
-	<bean id="vinoService" class="com.usuario.empresa.web.vitivinicolaubb.servicios.VinoService">
+	<bean id="pedidoService" class="com.usuario.empresa.web.vitivinicolaubb.servicios.PedidoService">
 		<property name="sqlMapClient" ref="sqlMap" />
 	</bean>
 </beans>

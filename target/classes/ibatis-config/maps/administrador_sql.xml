@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://www.ibatis.com/dtd/sql-map-2.dtd">
+<sqlMap namespace="administradoresResult">
+<!-- resultmaps -->
+	<resultMap id="adminResult" class="com.usuario.empresa.web.vitivinicolaubb.entidades.Administrador">
+		<result property="id_usuario" 	column="ID_USUARIO" />
+		<result property="nombre" 		column="NOMBRE" />
+		<result property="apellidoP" 	column="APELLIDO_PATERNO" />
+		<result property="apellidoM" 	column="APELLIDO_MATERNO" />
+		<result property="email" 		column="EMAIL" />
+	</resultMap>
+	<!-- sqls -->
+	<select id="getAdmins" resultMap="adminResult">
+		SELECT A.ID_USUARIO, A.NOMBRE, A.APELLIDO_PATERNO, A.APELLIDO_MATERNO, A.EMAIL
+		FROM ADMINISTRADOR AS A
+		ORDER BY A.APELLIDO_PATERNO;
+	</select>
+	<select id="ValidarAdmin" parameterClass="int" resultMap="adminResult">
+	    SELECT * FROM ADMINISTRADOR WHERE ID_USUARIO=#value#;
+	 </select>  
+	
+</sqlMap>

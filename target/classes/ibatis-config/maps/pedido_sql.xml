@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://www.ibatis.com/dtd/sql-map-2.dtd">
+<sqlMap namespace="pedidosResult">
+	<!-- resultmaps -->
+	<resultMap id="pedidoResult" class="com.usuario.empresa.web.vitivinicolaubb.entidades.Pedido">
+		<result property="id_pedido" 	column="ID_PEDIDO" />
+		<result property="fecha" 		column="FECHA" />
+		<result property="MontoTotal" 	column="MONTO" />
+		<result property="Estado" 		column ="ESTADO" />
+		<result property="id_cliente" 	column= "ID_CLIENTE" />
+	</resultMap>
+
+	<!-- sqls -->
+	
+	<select id="obtieneDetallePedido" parameterClass="int" resultMap="pedidoResult">
+		SELECT
+		P.ID_PEDIDO, P.FECHA, P.MONTO, P.ESTADO, P.ID_CLIENTE
+		FROM PEDIDO AS P
+		WHERE P.ID_PEDIDO=#value#;
+	</select>
+	<select id="consultarPedido" parameterClass="int" resultMap="pedidoResult">
+		SELECT ESTADO FROM PEDIDO
+		WHERE ID_PEDIDO= #value#;
+	
+	</select>
+	
+	<delete id="cancelaPedido" parameterClass="int">
+		DELETE FROM PEDIDO
+		WHERE ID_PEDIDO=#value#;
+	</delete>
+</sqlMap>

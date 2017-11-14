@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://www.ibatis.com/dtd/sql-map-2.dtd">
+<sqlMap namespace="productoresResult">
+<!-- resultmaps -->
+	<resultMap id="productorResult" class="com.usuario.empresa.web.vitivinicolaubb.entidades.Productor">
+		<result property="id_usuario" column="ID_USUARIO" />
+		<result property="nombre" 	column="NOMBRE" />
+		<result property="apellidoP" 	column="APELLIDO_PATERNO" />
+		<result property="apellidoM" 	column="APELLIDO_MATERNO" />
+		<result property="ubicacion"	column="UBICACION" />
+		<result property="direccion" 	column="DIRECCION" />
+		<result property="email" 		column="EMAIL" />
+	</resultMap>
+	<!-- sqls -->
+	<select id="getProductores" resultMap="productorResult">
+		SELECT P.ID_USUARIO, P.NOMBRE, P.APELLIDO_PATERNO, P.APELLIDO_MATERNO, P.UBICACION, P.DIRECCION, P.EMAIL
+		FROM PRODUCTOR AS P
+		ORDER BY P.APELLIDO_PATERNO;
+	</select>
+	<select id="validarProductor" parameterClass="int" resultClass="java.lang.Integer">
+	    SELECT COUNT(*)
+	    FROM PRODUCTOR WHERE ID_USUARIO=#value#;
+	 </select>  
+	
+</sqlMap>

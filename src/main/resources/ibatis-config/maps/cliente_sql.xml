@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://www.ibatis.com/dtd/sql-map-2.dtd">
+<sqlMap namespace="clientesResult">
+	<!-- resultmaps -->
+	<resultMap id="clienteResult" class="com.usuario.empresa.web.vitivinicolaubb.entidades.Cliente">
+		<result property="id_usuario" 	column="ID_USUARIO" />
+		<result property="nombre" 		column="NOMBRE" />
+		<result property="apellidoP" 	column="APELLIDO_PATERNO" />
+		<result property="apellidoM" 	column="APELLIDO_MATERNO" />
+		<result property="ubicacion"	column="UBICACION" />
+		<result property="email" 		column="EMAIL" />
+		<result property="telefono" 	column="TELEFONO" />
+	</resultMap>
+	<!-- sqls -->
+	<select id="getClientes" resultMap="clienteResult">
+		SELECT C.ID_USUARIO, C.NOMBRE, C.APELLIDO_PATERNO, C.APELLIDO_MATERNO, C.UBICACION, C.EMAIL, C.TELEFONO
+		FROM CLIENTE AS C
+		ORDER BY C.APELLIDO_PATERNO;
+	</select>
+	<select id="obtenerNumeroClientes" resultClass="java.lang.Integer">
+		SELECT COUNT(*)
+		FROM
+	    CLIENTE ;
+	</select>
+	
+	<delete id="eliminarCliente" parameterClass="int">
+		DELETE FROM CLIENTE
+		WHERE id_cliente=#value#;
+	</delete>
+	<select id="validarCliente" parameterClass="int" resultMap="clienteResult">
+	    SELECT * FROM CLIENTE WHERE ID_USUARIO=#value#;
+	 </select>  
+</sqlMap>
