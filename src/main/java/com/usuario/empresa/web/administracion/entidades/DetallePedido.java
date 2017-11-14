@@ -2,9 +2,9 @@ package com.usuario.empresa.web.administracion.entidades;
 
 public class DetallePedido {
    
-    /**
-     * atributos
-     */
+    
+     //atributos
+     
     public int id_Detalle;
     public int unidades;
     public int subtotal;
@@ -12,15 +12,15 @@ public class DetallePedido {
     public int id_vino;
     public int id_pedido;
 
-     /**
-     * Default constructor
-     */
+     
+     // constructor
+     
     public DetallePedido() {
     }
 
-    /**
-     * getters
-     */
+    
+      //getters
+     
     public int obtenersubTotal() {
         return subtotal;
     }
@@ -45,9 +45,9 @@ public class DetallePedido {
         return id_Detalle;
     }
 
-     /**
-     * setters
-     */
+    
+     //setters
+     
      public void setidDetalle(int id_Detalle) {
         this.id_Detalle = id_Detalle;
     }

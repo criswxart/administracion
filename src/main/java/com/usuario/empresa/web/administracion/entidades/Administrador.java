@@ -3,9 +3,7 @@ package com.usuario.empresa.web.administracion.entidades;
 
 public class Administrador extends Usuario {
 
-    /**
-     * atributos
-     */
+    //atributos  
     private int id_usuario;
     private String nombre;
     private String apellidoP;
@@ -13,16 +11,14 @@ public class Administrador extends Usuario {
     private String email;
 
     
-    /**
-     *  constructor
-     */
+    
+    //constructor
+    
     public Administrador() {
     }
 
 
-    /**
-     * getters
-     */
+    //getters
     public String obteneNombre() {
         return nombre;
     }
@@ -42,8 +38,7 @@ public class Administrador extends Usuario {
     public int obtieneidAdmin() {
         return id_usuario;
     }
-    /*setters
-    */
+    //setters
     public void setNombre(String nombre){
         this.nombre=nombre;
     }

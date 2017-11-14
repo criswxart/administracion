@@ -3,22 +3,22 @@ package com.usuario.empresa.web.administracion.entidades;
 
 public class Usuario {
 
-    /**
-     * atributos
-     */
+    
+     //atributos
+     
     private int id_usuario;
     private String nombreU;
     private String contrasena;
     private int id_rol;
-     /**
-     * constructor
-     */
+     
+     //constructor
+     
     public Usuario() {
     }
 
-    /**
-     * getters
-     */
+    
+      //getters
+     
     public int obtenerId_usuario() {
         return id_usuario;
     }
@@ -32,11 +32,11 @@ public class Usuario {
     }
 
     public int obtenerid_Rol(){
-        return id_rol
+        return id_rol;
     }
 
-    /*setters
-    */
+    //setters
+    
      public void setidUsuario(int id_usuario){
         this.id_usuario=id_usuario;
     }

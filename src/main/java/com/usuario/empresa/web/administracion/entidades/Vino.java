@@ -2,30 +2,30 @@ package com.usuario.empresa.web.administracion.entidades;
 
 public class Vino {
 
-    /**
-     * atributos
-     */
+    
+      //atributos
+     
     private int id_vino;
     private String nombre;
     private int valor_Dolar;
     private int valor_Euro;
     private int valor_CLP;
-    private blob imagen;
+    private String imagen;
     private int stock;
     private String tipo_botella;
     private int id_productor;
     private int id_cepa;
 
-    /**
-     * constructor
-     */
+    
+      //constructor
+     
     public Vino() {
     
     }
 
-    /**
-     * getters
-     */
+    
+     //getters
+     
     public int obtenerId_vino() {
         return id_vino;
     }
@@ -46,7 +46,7 @@ public class Vino {
         return valor_CLP;
     }
 
-    public blob obtenerImagen() {
+    public String obtenerImagen() {
         return imagen;
     }
 
@@ -64,9 +64,9 @@ public class Vino {
      public String obtenerTipoBotella(){
         return tipo_botella;
     }
-    /*
-    setters
-    */
+    
+    //setters
+    
     public void cambiarStock(int cantidad) {
         this.stock=this.stock-cantidad;
     }

@@ -3,9 +3,9 @@ package com.usuario.empresa.web.administracion.entidades;
 
 public class Cliente extends Usuario {
 
-    /**
-     * atributos 
-     */
+    
+    //atributos 
+     
     private int id_usuario;
     private String nombre;
     private String apellidoP;
@@ -14,16 +14,16 @@ public class Cliente extends Usuario {
     private String email;
     private int telefono;
 
-    /**
-     * constructor
-     */
+    
+    //constructor
+    
     public Cliente() {
     }
 
     
-    /**
-     * getters
-     */
+    
+      //getters
+     
     public int obtenerId_cliente() {
         return id_usuario;
     }
@@ -43,9 +43,9 @@ public class Cliente extends Usuario {
     public int obtenerTelefono() {
         return telefono;
     }
-     /**
-     * setters
-     */
+     
+     //setters
+     
      public void setidCliente(int id_usuario) {
         this.id_usuario = id_usuario;
     }

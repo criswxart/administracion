@@ -1,25 +1,27 @@
 package com.usuario.empresa.web.administracion.entidades;
 
+import java.sql.Date;
+
 public class Pedido {
 
-    /**
-     * atributos 
-     */
+    
+     //atributos 
+     
     private int id_pedido;
     private Date fecha;
     private int MontoTotal;
     private boolean estado;
     private int id_cliente;
 
-    /**
-     *  constructor
-     */
+    
+     // constructor
+    
     public Pedido() {
     }
 
-    /**
-     * getters
-     */
+    
+     //getters
+     
     public Date obtenerFecha() {
         return fecha;
     }
@@ -40,9 +42,9 @@ public class Pedido {
         return id_cliente;
     }
     
-    /**
-     * setters
-     */
+    
+      //setters
+     
    public void setidPedido(int id_pedido) {
         this.id_pedido = id_pedido;
     }

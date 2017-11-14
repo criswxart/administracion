@@ -2,9 +2,9 @@ package com.usuario.empresa.web.administracion.entidades;
 
 public class Productor extends Usuario {
 
-    /**
-     * atributos 
-     */
+    
+    //atributos 
+     
     private int id_usuario;
     private String nombre;
     private String apellidoP;
@@ -14,15 +14,15 @@ public class Productor extends Usuario {
     private String email;
 
 
-    /**
-     * constructor
-     */
+    
+    //constructor
+     
     public Productor() {
     }
 
-    /**
-     * getters
-     */
+    
+    //getters
+    
     public int obtenerId_productor() {
         return id_usuario;
     }
@@ -43,8 +43,8 @@ public class Productor extends Usuario {
         return email;
     }
 
-    /*setters
-    */
+    //setters
+    
 
     public void setidProductor(int id_usuario) {
         this.id_usuario = id_usuario;

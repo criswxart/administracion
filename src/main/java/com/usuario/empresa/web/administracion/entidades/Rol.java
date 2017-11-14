@@ -3,21 +3,21 @@ package com.usuario.empresa.web.administracion.entidades;
 
 public class Rol {
 
-    /**
-     * atributos
-     */
+    
+     //atributos
+     
     private int id_rol;
     private String nombreRol;
 
-   /**
-     * constructor
-     */
+   
+      //constructor
+     
     public Rol() {
     }
 
-    /**
-     * getters
-     */
+    
+      //getters
+     
     public int getId() {
         return id_rol;
     }
@@ -26,8 +26,8 @@ public class Rol {
         return nombreRol;
     }
 
-    /*setters
-    */
+    //setters
+    
 
     public void setidRol(int id_rol){
         this.id_rol=id_rol;
