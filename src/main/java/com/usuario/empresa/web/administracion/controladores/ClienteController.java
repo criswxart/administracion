@@ -1,4 +1,4 @@
-package com.usuario.empresa.web.administracion.controladores;
+/**package com.usuario.empresa.web.administracion.controladores;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,8 +22,7 @@ public class ClienteController extends MultiActionController {
 	private ApplicationContext ctx = null;
 
 	/**
-	 * constructor
-	 */
+	
 	public ClienteController() {
 		Cliente cliente = null;
 		// ciente 1
@@ -34,7 +33,7 @@ public class ClienteController extends MultiActionController {
 		cliente.setApellidoM("Gomez");
 		cliente.setdireccion("Avenida Real 1177");
 		cliente.setemail("jaipan@123.com");
-		cliente.settelefono(+56977952262);
+		cliente.settelefono(77952262);
 		clientes.add(cliente);
 		// cliente 1
 		cliente = new Cliente();
@@ -44,7 +43,7 @@ public class ClienteController extends MultiActionController {
 		cliente.setApellidoM("Retamal");
 		cliente.setdireccion("Antigua Roma 65");
 		cliente.setemail("piazap@123.com");
-		cliente.settelefono(+56922576511);
+		cliente.settelefono(22576511);
 		clientes.add(cliente);
 
 		ctx = new ClassPathXmlApplicationContext(
@@ -63,4 +62,5 @@ public class ClienteController extends MultiActionController {
 	}
 
 	
-}
+} * constructor
+	 */

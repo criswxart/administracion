@@ -21,45 +21,39 @@ public class ProductorController extends MultiActionController {
 	private ProductorService service = null;
 	private ApplicationContext ctx = null;
 
-	/**
-	 * constructor
-	 */
+	
 	public ProductorController() {
 		Productor productor = null;
-	
-		/*productor = new Productor();
-		//productor.setid_Productor(2);
-		productor.setNombre("Jorge");
-		productor.setApellidoP("Gatica");
-		productor.setApellidoM("Guerra");
-		productor.setdireccion("Acacios del norte 200");
-		productor.setubicacion("Ninhue");
-		productor.setemail("jorgat@123.com");
-		productores.add(productor);
-	
-		productor = new Productor();
-		//productor.setid_Productor(3);
-		productor.setNombre("Mercedes");
-		productor.setApellidoP("Rubilar");
-		productor.setApellidoM("Segura");
-		productor.setdireccion("Los chincoles 375");
-		productor.setubicacion("Portezuelo");
-		//productor.setemail("merrub@123.com")
-		productores.add(productor);*/
+//		productor = new Productor();
+//		//productor.setid_Productor(2);
+//		productor.setNombre("Jorge");
+//		productor.setApellidoP("Gatica");
+//		productor.setApellidoM("Guerra");
+//		productor.setdireccion("Acacios del norte 200");
+//		productor.setubicacion("Ninhue");
+//		productor.setemail("jorgat@123.com");
+//		//productores.add(productor);
+//	
+//		productor = new Productor();
+//		//productor.setid_Productor(3);
+//		productor.setNombre("Mercedes");
+//		productor.setApellidoP("Rubilar");
+//		productor.setApellidoM("Segura");
+//		productor.setdireccion("Los chincoles 375");
+//		productor.setubicacion("Portezuelo");
+//		//productor.setemail("merrub@123.com")
+//		//productores.add(productor);
 		ctx = new ClassPathXmlApplicationContext(
 				"classpath:/spring/applicationContext.xml");
 		service = (ProductorService) ctx.getBean("productoresService");
 	}
-
-	
 	public ModelAndView listar(HttpServletRequest request,
 			HttpServletResponse response) throws Exception {
 	
 		List<Productor> listaProductores = service.getProductores();
 
-		return new ModelAndView("usuarios/listar", "usuarios", listaUsuarios);
+		return new ModelAndView("productores/listar", "usuarios", listaProductores);
 	}
-
-	
-	
 }
+
+

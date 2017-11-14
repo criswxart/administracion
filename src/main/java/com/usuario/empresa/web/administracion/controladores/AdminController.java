@@ -1,4 +1,4 @@
-package com.usuario.empresa.web.administracion.controladores;
+/**package com.usuario.empresa.web.administracion.controladores;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,16 +14,13 @@ import org.springframework.web.servlet.mvc.multiaction.MultiActionController;
 import com.usuario.empresa.web.administracion.entidades.Administrador;
 import com.usuario.empresa.web.administracion.servicios.AdminService;
 
-
-public class AdminController extends MultiActionController {
+*/
+/**public class AdminController extends MultiActionController {
 	private List<Administrador> admins = new ArrayList<Administrador>();
 
 	private AdminService service = null;
 	private ApplicationContext ctx = null;
 
-	/**
-	 * constructor
-	 */
 	public AdminController() {
 		Administrador admin = null;
 		
@@ -48,5 +45,6 @@ public class AdminController extends MultiActionController {
 		
 		return new ModelAndView("admins/listar", "admins", listaAdmins);
 	}
-
 	
+}
+	*/
