@@ -11,6 +11,9 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.multiaction.MultiActionController;
 
+import com.usuario.empresa.web.administracion.entidades.Productor;
+import com.usuario.empresa.web.administracion.servicios.ProductorService;
+
 
 public class ProductorController extends MultiActionController {
 	private List<Productor> productores = new ArrayList<Productor>();
