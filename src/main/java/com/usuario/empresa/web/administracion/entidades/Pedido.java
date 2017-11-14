@@ -1,3 +1,4 @@
+package com.usuario.empresa.web.administracion.entidades;
 
 public class Pedido {
 

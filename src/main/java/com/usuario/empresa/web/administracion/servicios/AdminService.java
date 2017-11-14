@@ -1,8 +1,8 @@
-package com.usuario.empresa.web.vitivinicolaubb.servicios;
+package com.usuario.empresa.web.administracion.servicios;
 
 import java.util.List;
 
-import com.usuario.empresa.web.vitivinicolaubb.entidades.Administrador;
+import com.usuario.empresa.web.administracion.entidades.Administrador;
 
 
 

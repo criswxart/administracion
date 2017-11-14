@@ -1,3 +1,4 @@
+package com.usuario.empresa.web.administracion.entidades;
 
 
 public class Usuario {
@@ -7,7 +8,7 @@ public class Usuario {
      */
     private int id_usuario;
     private String nombreU;
-    private String contraseña;
+    private String contrasena;
     private int id_rol;
      /**
      * constructor
@@ -27,7 +28,7 @@ public class Usuario {
     }
 
     public String obtenerPass() { 
-        return contraseña;
+        return contrasena;
     }
 
     public int obtenerid_Rol(){
@@ -42,8 +43,8 @@ public class Usuario {
      public void setnombreU(String nombreU){
         this.nombreU=nombreU;
     }
-    public void setPass(String contraseña){
-        this.contraseña=contraseña;
+    public void setPass(String contrasena){
+        this.contrasena=contrasena;
     }
     public void setidRol(int id_rol){
         this.id_rol=id_rol;

@@ -2,7 +2,7 @@
 <!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://www.ibatis.com/dtd/sql-map-2.dtd">
 <sqlMap namespace="productoresResult">
 <!-- resultmaps -->
-	<resultMap id="productorResult" class="com.usuario.empresa.web.vitivinicolaubb.entidades.Productor">
+	<resultMap id="productorResult" class="com.usuario.empresa.web.administracion.entidades.Productor">
 		<result property="id_usuario" column="ID_USUARIO" />
 		<result property="nombre" 	column="NOMBRE" />
 		<result property="apellidoP" 	column="APELLIDO_PATERNO" />

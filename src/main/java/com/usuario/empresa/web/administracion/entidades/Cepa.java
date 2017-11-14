@@ -1,4 +1,4 @@
-
+package com.usuario.empresa.web.administracion.entidades;
 
 public class Cepa {
 
@@ -9,7 +9,7 @@ public class Cepa {
     private int id_cepa;
     private String nombreCepa;
     private String descripcion;
-    private String viña;
+    private String vina;
 
 
    
@@ -35,8 +35,8 @@ public class Cepa {
         return descripcion;
     }
 
-    public String obtenerViña() {
-        return viña;
+    public String obtenerVina() {
+        return vina;
     }
     /**
      * setters
@@ -50,8 +50,8 @@ public class Cepa {
      public void setDescipcion(String descripcion) {
         this.descripcion = descripcion;
     }
-     public void setviña(String viña) {
-        this.viña = viña;
+     public void setvina(String vina) {
+        this.vina = vina;
     }
 
 

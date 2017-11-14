@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://www.ibatis.com/dtd/sql-map-2.dtd">
+<sqlMap namespace="vinosResult">
+	<!-- resultmaps -->
+	<resultMap id="vinoResult" class="com.usuario.empresa.web.administracion.entidades.Vino">
+		<result property="id_vino" 		column="ID_VINO" />
+		<result property="nombre" 	column="NOMBRE" />
+		<result property="valor_Dolar" 	column="VALOR_DOLAR" />
+		<result property="valor_Euro" 	column="VALOR_EURO" />
+		<result property="valor_CLP" 	column="VALOR_CLP" />
+		<result property="imagen" 	column="IMAGEN" />
+		<result property="stock" 	column="STOCK" />
+		<result property="tipo_botella" 	column="TIPO_BOTELLA" />
+		<result property="id_productor" 	column="ID_PRODUCTOR" />
+		<result property="id_cepa" 	column="ID_CEPA" />
+	</resultMap>
+
+	<!-- sqls -->
+	<select id="getVinos" resultMap="usuarioResult">
+		SELECT V.ID_VINO, V.NOMBRE, V.VALOR_DOLAR, V.VALOR_EURO, V.VALOR_CLP, V.IMAGEN, V.STOCK, V.TIPO_BOTELLA, V.ID_PRODUCTOR, V.ID_CEPA 
+		FROM VINOS AS V
+		ORDER BY V.ID_PRODUCTOR;
+	</select>
+	
+</sqlMap>
