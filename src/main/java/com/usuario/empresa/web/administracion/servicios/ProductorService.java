@@ -15,7 +15,7 @@ public class ProductorService extends ServiceImpl {
 
 		
 	public Productor validarProductor(int idEntrante) throws Exception {
-		return (Productor) sqlMap.queryForObject("validarProductor", productor);
+		return (Productor) sqlMap.queryForObject("validarProductor", idEntrante );
 	}
 
 	
