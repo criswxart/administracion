@@ -6,8 +6,8 @@
     <title>Tus vinos</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1,maximum-scale=1, minimum-scale=1">
-    <link rel="stylesheet" type="text/css" href="structures/css/bootstrap.min.css">
-    <link rel="stylesheet" href="structures/css/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilo.css" />
     
 </head>
  
@@ -37,7 +37,7 @@
   </div><!-- /.container-fluid -->
 </nav> 
     <header>
-       <img src="portada.jpg"  title="portada" class="img-responsive center-block" alt="Responsive image" width="100%" height= "100px">
+       <img src="portada.jpg"  title="portada" class="img-responsive center-block" alt="Responsive image" width="100%" height="100px">
     </header>
     <nav class="navbar navbar-default">
   <div class="container-fluid">
@@ -83,29 +83,163 @@
           <a href="#" class="list-group-item active">
             Lista de Productores
           </a>
-          <a href="#" class="list-group-item">Vinos Nacionalesassad</a>
+          <a href="#" class="list-group-item">Vinos Nacionales</a>
           <a href="#" class="list-group-item">Vinos Extranjeros</a>
-          <a href="#" class="list-group-item">Vinos 1</a>
-          <a href="#" class="list-group-item">Vinos 2</a>
+          <a href="#" class="list-group-item">Vino Tinto</a>
+          <a href="#" class="list-group-item">Vino Blanco</a>
+          <a href="#" class="list-group-item">Vino Rosado</a>
+          <a href="#" class="list-group-item">Vino </a>
+          
+          
           </ul>
       </div>
       <div class="col-md-9">
-          
-          
-          
-      </div>
-   
+          <div class="row">
+          <div class="col-sm-6 col-md-3">
+            <div class="thumbnail">
+             <h3>Vino Tinto </h3>
+              <img src="vino1.png"  class="img-responsive center-block" alt="Responsive image" width="100%" height= "100px">
+              <div class="caption">
+                 <p>LUIGI BOSCA MALBEC </p>
+                <p>US $340,00</p>
+                <p>CL $12.000</p>
+                <p>
+                  <a href="#" class="btn btn-primary" role="button">Comprar</a>
+                  <a href="#" class="btn btn-default" role="button">Botón</a>
+                </p>
+              </div> 
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="thumbnail">
+             <h3>Vino Tinto </h3>
+              <img src="vino1.png"  class="img-responsive center-block" alt="Responsive image" width="100%" height= "100px">
+              <div class="caption">
+                 <p>LUIGI BOSCA MALBEC </p>
+                <p>US $340,00</p>
+                <p>CL $12.000</p>
+                <p>
+                  <a href="#" class="btn btn-primary" role="button">Comprar</a>
+                  <a href="#" class="btn btn-default" role="button">Botón</a>
+                </p>
+              </div> 
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="thumbnail">
+             <h3>Vino Tinto </h3>
+              <img src="vino1.png"  class="img-responsive center-block" alt="Responsive image" width="100%" height= "100px">
+              <div class="caption">
+                <p>LUIGI BOSCA MALBEC </p>
+                <p>US $340,00</p>
+                <p>CL $12.000</p>
+                <p>
+                  <a href="#" class="btn btn-primary" role="button">Comprar</a>
+                  <a href="#" class="btn btn-default" role="button">Botón</a>
+                </p>
+              </div> 
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="thumbnail">
+             <h3>Vino Tinto </h3>
+              <img src="vino1.png"  class="img-responsive center-block" alt="Responsive image" width="100%" height= "100px">
+              <div class="caption">
+                  <p>LUIGI BOSCA MALBEC </p>
+                <p>US $340,00</p>
+                <p>CL $12.000</p>
+                <p>
+                  <a href="#" class="btn btn-primary" role="button">Comprar</a>
+                  <a href="#" class="btn btn-default" role="button">Botón</a>
+                </p>
+              </div> 
+            </div>
+          </div>
+        </div>
+         <div class="row">
+          <div class="col-sm-6 col-md-3">
+            <div class="thumbnail">
+             <h3>Vino Tinto </h3>
+              <img src="vino1.png"  class="img-responsive center-block" alt="Responsive image" width="100%" height= "100px">
+              <div class="caption">
+                  <p>LUIGI BOSCA MALBEC </p>
+                <p>US $340,00</p>
+                <p>CL $12.000</p>
+                <p>
+                  <a href="#" class="btn btn-primary" role="button">Comprar</a>
+                  <a href="#" class="btn btn-default" role="button">Botón</a>
+                </p>
+              </div> 
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="thumbnail">
+             <h3>Vino Tinto </h3>
+              <img src="vino1.png"  class="img-responsive center-block" alt="Responsive image" width="100%" height= "100px">
+              <div class="caption">
+                  <p>LUIGI BOSCA MALBEC </p>
+                <p>US $340,00</p>
+                <p>CL $12.000</p>
+                <p>
+                  <a href="#" class="btn btn-primary" role="button">Comprar</a>
+                  <a href="#" class="btn btn-default" role="button">Botón</a>
+                </p>
+              </div> 
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="thumbnail">
+             <h3>Vino Tinto </h3>
+              <img src="vino1.png"  class="img-responsive center-block" alt="Responsive image" width="100%" height= "100px">
+              <div class="caption">
+                  <p>LUIGI BOSCA MALBEC </p>
+                <p>US $340,00</p>
+                <p>CL $12.000</p>
+                <p>
+                  <a href="#" class="btn btn-primary" role="button">Comprar</a>
+                  <a href="#" class="btn btn-default" role="button">Botón</a>
+                </p>
+              </div> 
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="thumbnail">
+             <h3>Vino Tinto </h3>
+              <img src="vino1.png"  class="img-responsive center-block" alt="Responsive image" width="100%" height= "100px">
+              <div class="caption">
+                  <p>LUIGI BOSCA MALBEC </p>
+                <p>US $340,00</p>
+                <p>CL $12.000</p>
+                <p>
+                  <a href="#" class="btn btn-primary" role="button">Comprar</a>
+                  <a href="#" class="btn btn-default" role="button">Botón</a>
+                </p>
+              </div> 
+            </div>
+          </div>
+        </div>
+         <nav aria-label="...">
+          <ul class="pagination">
+            <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+            <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+             <li class="disabled"><a href="#">2 <span class="sr-only">(current)</span></a></li>
+             <li class="disabled"><a href="#">3 <span class="sr-only">(current)</span></a></li>
+             <li class="disabled"><a href="#">4 <span class="sr-only">(current)</span></a></li>
+             <li class="disabled"><a href="#">5 <span class="sr-only">(current)</span></a></li>
+          </ul>
+        </nav> 
+      </div> 
        
     </div> 
+   
     <footer>
         <h5>Página web creada por vecinos invasores </h5>
     </footer>
     </div>
     </div>
-    <script type="text/javascript" src="structures/js/jquery-3.2.1.min.js"> </script>
-    <script type="text/javascript" src="structures/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"> </script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
 </body>
 
 </html>
-    
  
